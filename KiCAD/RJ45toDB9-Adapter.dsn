@@ -1,0 +1,253 @@
+(pcb "C:\Users\lukas\git\RJ45toDB9\KiCAD\RJ45toDB9-Adapter.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.7")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  55000 -40000  55000 -105000  195000 -105000  195000 -40000
+            55000 -40000  55000 -40000)
+    )
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component EigeneFootprints:RJ45_WE_615008140621
+      (place J101 186000 -72000 front 90 (PN RJ45))
+    )
+    (component EigeneFootprints:Harting_Dsub9Female_09661526611
+      (place J102 66290 -72370 front 270 (PN DB9_Female))
+    )
+    (component "EigeneFootprints:DIP-20_0_ELL"
+      (place J103 90190 -58430 front 90 (PN Conn_02x10_Odd_Even))
+      (place J104 107190 -58430 front 90 (PN Conn_02x10_Odd_Even))
+      (place J105 124190 -58570 front 90 (PN Conn_02x10_Odd_Even))
+      (place J106 141190 -58570 front 90 (PN Conn_02x10_Odd_Even))
+      (place J107 156810 -58570 front 90 (PN Conn_02x10_Odd_Even))
+      (place J108 90190 -87430 front 90 (PN Conn_02x10_Odd_Even))
+      (place J109 107190 -87430 front 90 (PN Conn_02x10_Odd_Even))
+      (place J110 124190 -87430 front 90 (PN Conn_02x10_Odd_Even))
+      (place J111 141190 -87570 front 90 (PN Conn_02x10_Odd_Even))
+    )
+  )
+  (library
+    (image EigeneFootprints:RJ45_WE_615008140621
+      (outline (path signal 150  10000 9000  -10000 9000))
+      (outline (path signal 150  10000 -10000  10000 9000))
+      (outline (path signal 150  -10000 -10000  10000 -10000))
+      (outline (path signal 150  -10000 9000  -10000 -10000))
+      (pin Round[A]Pad_1500_um 8 -3570 4490)
+      (pin Round[A]Pad_1500_um 7 -1530 4490)
+      (pin Round[A]Pad_1500_um 6 510 4490)
+      (pin Round[A]Pad_1500_um 5 2550 4490)
+      (pin Round[A]Pad_1500_um 4 -2550 2710)
+      (pin Round[A]Pad_1500_um 3 -510 2710)
+      (pin Round[A]Pad_1500_um 2 1530 2710)
+      (pin Round[A]Pad_1500_um 1 3570 2710)
+      (pin Round[A]Pad_2500_um 9 8125 3430)
+      (pin Round[A]Pad_2500_um 9@1 -8125 3430)
+      (keepout "" (circle F.Cu 3250 6350 0))
+      (keepout "" (circle B.Cu 3250 6350 0))
+      (keepout "" (circle F.Cu 3250 -6350 0))
+      (keepout "" (circle B.Cu 3250 -6350 0))
+    )
+    (image EigeneFootprints:Harting_Dsub9Female_09661526611
+      (outline (path signal 150  10000 -19000  -10000 -19000))
+      (outline (path signal 150  -10000 -19000  -10000 -13000))
+      (outline (path signal 150  10000 -19000  10000 -13000))
+      (outline (path signal 150  18000 -13000  18000 4000))
+      (outline (path signal 150  -19000 -13000  18000 -13000))
+      (outline (path signal 150  -19000 4000  -19000 -13000))
+      (outline (path signal 150  18000 4000  -19000 4000))
+      (pin Round[A]Pad_1524_um 5 -5480 0)
+      (pin Round[A]Pad_1524_um 4 -2740 0)
+      (pin Round[A]Pad_1524_um 3 0 0)
+      (pin Round[A]Pad_1524_um 2 2740 0)
+      (pin Round[A]Pad_1524_um 1 5480 0)
+      (pin Round[A]Pad_1524_um 6 4110 -2540)
+      (pin Round[A]Pad_1524_um 7 1370 -2540)
+      (pin Round[A]Pad_1524_um 8 -1370 -2540)
+      (pin Round[A]Pad_1524_um 9 -4110 -2540)
+      (pin Round[A]Pad_4000_um @1 12500 -1270)
+      (pin Round[A]Pad_4000_um @2 -12500 -1270)
+    )
+    (image "EigeneFootprints:DIP-20_0_ELL"
+      (outline (path signal 150  -12530 -5310  12530 -5310))
+      (outline (path signal 150  12530 -5310  12530 5310))
+      (outline (path signal 150  12530 5310  -12530 5310))
+      (outline (path signal 150  -12530 5310  -12530 1770))
+      (outline (path signal 150  -12530 1770  -12080 1770))
+      (outline (path signal 150  -12080 1770  -12080 -1770))
+      (outline (path signal 150  -12080 -1770  -12530 -1770))
+      (outline (path signal 150  -12530 -1770  -12530 -5310))
+      (pin Oval[A]Pad_1200x2000_um 20 -11430 3810)
+      (pin Oval[A]Pad_1200x2000_um 1 -11430 -3810)
+      (pin Oval[A]Pad_1200x2000_um 19 -8890 3810)
+      (pin Oval[A]Pad_1200x2000_um 2 -8890 -3810)
+      (pin Oval[A]Pad_1200x2000_um 18 -6350 3810)
+      (pin Oval[A]Pad_1200x2000_um 3 -6350 -3810)
+      (pin Oval[A]Pad_1200x2000_um 17 -3810 3810)
+      (pin Oval[A]Pad_1200x2000_um 4 -3810 -3810)
+      (pin Oval[A]Pad_1200x2000_um 16 -1270 3810)
+      (pin Oval[A]Pad_1200x2000_um 5 -1270 -3810)
+      (pin Oval[A]Pad_1200x2000_um 15 1270 3810)
+      (pin Oval[A]Pad_1200x2000_um 6 1270 -3810)
+      (pin Oval[A]Pad_1200x2000_um 14 3810 3810)
+      (pin Oval[A]Pad_1200x2000_um 7 3810 -3810)
+      (pin Oval[A]Pad_1200x2000_um 13 6350 3810)
+      (pin Oval[A]Pad_1200x2000_um 8 6350 -3810)
+      (pin Oval[A]Pad_1200x2000_um 12 8890 3810)
+      (pin Oval[A]Pad_1200x2000_um 9 8890 -3810)
+      (pin Oval[A]Pad_1200x2000_um 11 11430 3810)
+      (pin Oval[A]Pad_1200x2000_um 10 11430 -3810)
+    )
+    (padstack Round[A]Pad_1500_um
+      (shape (circle F.Cu 1500))
+      (shape (circle B.Cu 1500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1524_um
+      (shape (circle F.Cu 1524))
+      (shape (circle B.Cu 1524))
+      (attach off)
+    )
+    (padstack Round[A]Pad_2500_um
+      (shape (circle F.Cu 2500))
+      (shape (circle B.Cu 2500))
+      (attach off)
+    )
+    (padstack Round[A]Pad_4000_um
+      (shape (circle F.Cu 4000))
+      (shape (circle B.Cu 4000))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1200x2000_um
+      (shape (path F.Cu 1200  0 -400  0 400))
+      (shape (path B.Cu 1200  0 -400  0 400))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net /eth8
+      (pins J101-8 J111-1 J111-2 J111-3 J111-4 J111-5 J111-6 J111-7 J111-8 J111-9
+        J111-10)
+    )
+    (net /eth7
+      (pins J101-7 J109-1 J109-2 J109-3 J109-4 J109-5 J109-6 J109-7 J109-8 J109-9
+        J109-10)
+    )
+    (net /eth6
+      (pins J101-6 J108-1 J108-2 J108-3 J108-4 J108-5 J108-6 J108-7 J108-8 J108-9
+        J108-10)
+    )
+    (net /eth5
+      (pins J101-5 J104-1 J104-2 J104-3 J104-4 J104-5 J104-6 J104-7 J104-8 J104-9
+        J104-10)
+    )
+    (net /eth4
+      (pins J101-4 J103-1 J103-2 J103-3 J103-4 J103-5 J103-6 J103-7 J103-8 J103-9
+        J103-10)
+    )
+    (net /eth3
+      (pins J101-3 J107-1 J107-2 J107-3 J107-4 J107-5 J107-6 J107-7 J107-8 J107-9
+        J107-10)
+    )
+    (net /eth2
+      (pins J101-2 J106-1 J106-2 J106-3 J106-4 J106-5 J106-6 J106-7 J106-8 J106-9
+        J106-10)
+    )
+    (net /eth1
+      (pins J101-1 J105-1 J105-2 J105-3 J105-4 J105-5 J105-6 J105-7 J105-8 J105-9
+        J105-10)
+    )
+    (net /eth9
+      (pins J101-9 J101-9@1 J110-1 J110-2 J110-3 J110-4 J110-5 J110-6 J110-7 J110-8
+        J110-9 J110-10)
+    )
+    (net /DB5
+      (pins J102-5 J103-15 J104-15 J105-15 J106-15 J107-15 J108-15 J109-15 J110-15
+        J111-15)
+    )
+    (net /DB4
+      (pins J102-4 J103-16 J104-16 J105-16 J106-16 J107-16 J108-16 J109-16 J110-16
+        J111-16)
+    )
+    (net /DB3
+      (pins J102-3 J103-17 J104-17 J105-17 J106-17 J107-17 J108-17 J109-17 J110-17
+        J111-17)
+    )
+    (net /DB2
+      (pins J102-2 J103-18 J104-18 J105-18 J106-18 J107-18 J108-18 J109-18 J110-18
+        J111-18)
+    )
+    (net /DB1
+      (pins J102-1 J103-19 J104-19 J105-19 J106-19 J107-19 J108-19 J109-19 J110-19
+        J111-19)
+    )
+    (net /DB6
+      (pins J102-6 J103-14 J104-14 J105-14 J106-14 J107-14 J108-14 J109-14 J110-14
+        J111-14)
+    )
+    (net /DB7
+      (pins J102-7 J103-13 J104-13 J105-13 J106-13 J107-13 J108-13 J109-13 J110-13
+        J111-13)
+    )
+    (net /DB8
+      (pins J102-8 J103-12 J104-12 J105-12 J106-12 J107-12 J108-12 J109-12 J110-12
+        J111-12)
+    )
+    (net /DB9
+      (pins J102-9 J103-11 J104-11 J105-11 J106-11 J107-11 J108-11 J109-11 J110-11
+        J111-11)
+    )
+    (class kicad_default ""
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class Alle /DB1 /DB2 /DB3 /DB4 /DB5 /DB6 /DB7 /DB8 /DB9 /eth1 /eth2 /eth3
+      /eth4 /eth5 /eth6 /eth7 /eth8 /eth9 "Net-(J103-Pad20)" "Net-(J104-Pad20)"
+      "Net-(J105-Pad20)" "Net-(J106-Pad20)" "Net-(J107-Pad20)" "Net-(J108-Pad20)"
+      "Net-(J109-Pad20)" "Net-(J110-Pad20)" "Net-(J111-Pad20)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 500)
+        (clearance 500.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
